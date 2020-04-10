@@ -1,25 +1,30 @@
 // jshint esversion: 7
 
-//define helper functions here
+let sum = 0;
+let roll = 0;
+var dice1 = Math.floor((Math.random() * 6) + 1);
+var dice2 = Math.floor((Math.random() * 6) + 1);
 
-let rollDie = () => {
-  return Math.floor(Math.random()*6)+1;
-};
+document.getElementById("image1").src = "images/die" + dice1 + ".gif";
+document.getElementById("image2").src = "images/die" + dice2 + ".gif";
 
-let controller = function() {
-  //Input: prompt the user for cost and diameter
+function controller(){
+    roll += 1;
+    sum = parseInt(document.getElementById("input-box").value);
+    dice1 = Math.floor((Math.random() * 6) + 1);
+    dice2 = Math.floor((Math.random() * 6) + 1);
 
-  //Processing: assemble the result string
-  //use <br> in the result string for html newline
+    document.getElementById("image1").src = "images/die" + dice1 + ".gif";
+    document.getElementById("image2").src = "images/die" + dice2 + ".gif";
+    document.getElementById("output-box").innerText = "";
+    if(dice1 + dice2 == sum){
+        document.getElementById("output-box").innerText = "You hit your number in " + roll + " rolls!";
+        roll = 0;
+    }
+}
 
-  //Output: write the result string into the empty div
-};
-
-//Register the controller after the DOM is complete
+//button
 window.addEventListener("load", function() {
-  //select the button
   let button = document.querySelector("button");
-
-  //register the click handler for the button
   button.addEventListener("click", controller);
 });

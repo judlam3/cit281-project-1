@@ -10,17 +10,17 @@
 <body>
   <h2>Roll Number</h2>
 <p>
-  <img scr="images/die1.gif" alt="one dot die">
-  <img scr="images/die1.gif" alt="one dot die">
+  <img src="images/die1.gif" alt="one dot die" id = "image1">
+  <img src="images/die1.gif" alt="one dot die" id = "image2">
 </p>
-Enter target number:
-<input type="text">
+  Enter target number:
+  <input type="number" id = "input-box">
 <p>
-  <button>Roll 'em</button>
+  <button onclick = "controller()">Roll 'em</button>
 </p>
-<hr>
-<div>
-
-</div>
+  <hr>
+  <div id = "output-box">
+  </div>
 </body>
+<script src = "javascript/diceNamic.js"></script>
 </html>
