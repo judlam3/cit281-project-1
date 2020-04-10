@@ -11,24 +11,23 @@ let arrAvg = (arr) => {
 };
 
 //Req. 3c
-var arrMax = [2, 3, 5, 7, 9];
-var maxSoFar = 0;
-
-arrMax.forEach((elem) => {
-  if(maxSoFar < elem)
-  maxSoFar = elem;
-});
-
-console.log(maxSoFar);
-
-var arrMax = [6, 2, 4];
-var maxSoFar = 0;
-
-arrMax.forEach((elem) => {
-  if(maxSoFar < elem)
-  maxSoFar = elem;
-});
-
-console.log(maxSoFar);
+function arrMax(elem) {
+  var arr = elem[0];
+elem.forEach(maxSoFar => {
+  if(maxSoFar > arr) {
+    arr = maxSoFar;
+      }
+  });
+  return arr;
+}
 
 //Req. 3d
+let sumEvens = (arr) => {
+  var sum = 0;
+    for(var x of arr){
+        if(x%2==0){
+            sum=sum+x;
+        }
+    }
+    return sum;
+};
