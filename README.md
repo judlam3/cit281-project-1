@@ -10,6 +10,6 @@
 - JavaScript ES6+ features
 - I learned how to make new directories using GitBash
 
-  <img src="images/octocat.jpg" alt="cat">
+  <img src="images/octocat.jpg" alt="cat" width ="100px">
 
   <a href="https://pages.uoregon.edu/judyl/281/">Judy Lam's 281 website</a>
