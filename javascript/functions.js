@@ -9,3 +9,26 @@ let arrAvg = (arr) => {
   avg = sum/arr.length;
   return avg;
 };
+
+//Req. 3c
+var arrMax = [2, 3, 5, 7, 9];
+var maxSoFar = 0;
+
+arrMax.forEach((elem) => {
+  if(maxSoFar < elem)
+  maxSoFar = elem;
+});
+
+console.log(maxSoFar);
+
+var arrMax = [6, 2, 4];
+var maxSoFar = 0;
+
+arrMax.forEach((elem) => {
+  if(maxSoFar < elem)
+  maxSoFar = elem;
+});
+
+console.log(maxSoFar);
+
+//Req. 3d
